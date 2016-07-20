@@ -1,0 +1,11 @@
+author: James Welch
+description: Fast HTTP Getter
+os: darwin linux windows
+includes:
+  - README.md
+  - fasthttp-get
+excludes:
+  - \.git
+script:
+  - go get -v github.com/jameswelch2-bydeluxe/fasthttp
+  - go build -v github.com/jameswelch2-bydeluxe/fasthttp/cmd/fasthttp-get && touch fasthttp
